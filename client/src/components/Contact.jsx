@@ -20,7 +20,10 @@ const Contact = () => {
       message: message,
     };
     // console.log(dataSend);
-    const BASE_URL = "http://localhost:10000"; // Update the URL or endpoint
+    const BASE_URL =
+      process.env.NODE_ENV === "production"
+        ? "https://portfolio-q546.onrender.com/"
+        : "http://localhost:10000"; // Update the URL or endpoint
 
     const res = await fetch(BASE_URL + "/send", {
       method: "POST",
