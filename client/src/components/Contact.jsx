@@ -20,9 +20,9 @@ const Contact = () => {
       message: message,
     };
     // console.log(dataSend);
-    const port = process.env.PORT || 8000;
+    const BASE_URL = "http://localhost:8000"; // Update the URL or endpoint
 
-    const res = await fetch(`http://www.localhost:${port}/send`, {
+    const res = await fetch(BASE_URL + "/send", {
       method: "POST",
       body: JSON.stringify(dataSend),
       headers: {

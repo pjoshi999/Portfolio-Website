@@ -6,14 +6,15 @@ const dotenv = require("dotenv");
 dotenv.config();
 app.use(express.json());
 const nodemailer = require("nodemailer");
-
-const port = 8000;
+const path = require("path");
+app.use(express.static(path.join(__dirname, "build")));
 
 app.post("/send", (req, res) => {
   const { email, name, subject, message } = req.body;
 
   let transporter = nodemailer.createTransport({
     service: "gmail",
+    port: process.env.PORT,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
@@ -56,6 +57,6 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT || 8000, () => {
   console.log(`Starting a server at port ${process.env.PORT}`);
 });
