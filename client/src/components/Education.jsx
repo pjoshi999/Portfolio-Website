@@ -62,12 +62,12 @@ const Education = () => {
       </div>
 
       {/* About - Background Text */}
-      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute left-[-14.5rem] bottom-[1.3rem] z-40">
+      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute left-[-14.5rem] bottom-[1.3rem]">
         ABOUT ME
       </span>
 
       <div
-        className={`flex justify-evenly z-20 ${
+        className={`flex justify-evenly ${
           isVisible
             ? "translate-y-0 ease-in-out duration-500 opacity-100"
             : "translate-y-3/4 opacity-0"
