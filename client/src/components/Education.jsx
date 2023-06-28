@@ -67,7 +67,7 @@ const Education = () => {
       </span>
 
       <div
-        className={`flex justify-evenly ${
+        className={`flex justify-evenly z-20 ${
           isVisible
             ? "translate-y-0 ease-in-out duration-500 opacity-100"
             : "translate-y-3/4 opacity-0"
