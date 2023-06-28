@@ -13,7 +13,7 @@ app.post("/send", (req, res) => {
   const { email, name, subject, message } = req.body;
 
   let transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "smtp",
     port: process.env.PORT || 8000,
     auth: {
       user: process.env.SMTP_USER,
@@ -22,7 +22,7 @@ app.post("/send", (req, res) => {
   });
 
   const mailOptions = {
-    from: process.env.SMTP_USER,
+    from: email,
     to: process.env.SMTP_USER,
     subject: "Portfolio | " + subject + " | " + name,
     html: `
