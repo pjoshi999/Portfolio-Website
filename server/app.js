@@ -16,7 +16,7 @@ app.post("/send", (req, res) => {
     // service: "smtp",
     host: "smtp.forwardemail.net",
     port: process.env.PORT || 8000,
-    secure: true,
+    secure: false,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
