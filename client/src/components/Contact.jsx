@@ -20,8 +20,9 @@ const Contact = () => {
       message: message,
     };
     // console.log(dataSend);
+    const port = process.env.PORT || 8000;
 
-    const res = await fetch(`http://www.localhost:8000/send`, {
+    const res = await fetch(`http://www.localhost:${port}/send`, {
       method: "POST",
       body: JSON.stringify(dataSend),
       headers: {
