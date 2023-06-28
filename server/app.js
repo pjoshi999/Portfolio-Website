@@ -13,8 +13,10 @@ app.post("/send", (req, res) => {
   const { email, name, subject, message } = req.body;
 
   let transporter = nodemailer.createTransport({
-    service: "smtp",
+    // service: "smtp",
+    host: "smtp.forwardemail.net",
     port: process.env.PORT || 8000,
+    secure: true,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
