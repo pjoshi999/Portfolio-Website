@@ -57,6 +57,6 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(process.env.PORT || 8000, () => {
+app.listen(process.env.PORT || 10000, () => {
   console.log(`Starting a server at port ${process.env.PORT}`);
 });
