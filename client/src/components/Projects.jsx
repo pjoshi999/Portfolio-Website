@@ -18,27 +18,27 @@ const Projects = () => {
       <img
         src="/img/icons/ellipse-26.png"
         alt=""
-        className="absolute -rotate-90 -bottom-[11rem] w-[30rem] select-none"
+        className="absolute -rotate-90 -bottom-[11rem] w-[30rem] select-none 2xl:-bottom-[18rem] xl:-bottom-[18rem] lg:-bottom-[18rem] md:-bottom-[18rem] sm:-bottom-[14rem] 2xl:-left-0 xl:-left-16 lg:-left-40 md:-left-52 sm:-left-40"
       />
       {/* Ellipse - Background */}
       <img
         src="/img/icons/ellipse-27.png"
         alt=""
-        className="absolute -top-60 right-0 w-96 select-none"
+        className="absolute -top-60 right-0 w-96 select-none 2xl:-top-96 xl:-top-96 lg:-top-96 md:-top-96 sm:-top-96"
       />
 
       <h1
-        className={`text-3xl font-semibold text-center pb-[0.35rem] rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#0872BF] bg-no-repeat bg-[length:3%_3px] ${
+        className={`text-3xl font-semibold text-center pb-[0.35rem] rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#0872BF] bg-no-repeat bg-[length:50px_3px] ${
           isVisible
             ? "translate-y-0 ease-in-out duration-500 opacity-100"
-            : "translate-y-2/3 opacity-0"
+            : "translate-y-20 opacity-0"
         }`}
         ref={myRef}
       >
         PROJECTS
       </h1>
-      <div className="flex justify-center mx-[17rem] " ref={myRef}>
-        <div className="pt-12">
+      <div className="flex justify-center mx-[17rem] 2xl:mx-[17rem] xl:mx-[14rem] lg:mx-[8rem] md:mx-[5rem] sm:mx-0">
+        <div className="pt-12 2xl:pt-12 xl:pt-8">
           <Swiper
             effect={"coverflow"}
             spaceBetween={60}
@@ -62,14 +62,15 @@ const Projects = () => {
             }}
             modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
             style={{
-              "--swiper-pagination-color": "#fff",
+              "--swiper-pagination-color": "#13FF00",
               "--swiper-pagination-bottom": "8px",
               "--swiper-navigation-color": "#13FF00",
+              "--swiper-navigation-size": "40px",
             }}
             className={`flex justify-center ${
               isVisible
-                ? "translate-y-0 ease-in-out duration-500 opacity-100"
-                : "translate-y-2/3 opacity-0"
+                ? "translate-y-0 ease-in-out duration-700 opacity-100"
+                : "translate-y-20 opacity-0"
             }`}
             ref={myRef}
           >
@@ -79,7 +80,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/watchify.png" alt="" className="h-[29rem]" />
+                <img
+                  src="/img/watchify.png"
+                  alt=""
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                />
               </a>
             </SwiperSlide>
             <SwiperSlide>
@@ -88,7 +93,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/foodhut.png" alt="" className="h-[29rem]" />
+                <img
+                  src="/img/foodhut.png"
+                  alt=""
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                />
               </a>
             </SwiperSlide>
             <SwiperSlide>
@@ -97,7 +106,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/cloudcast.png" alt="" className="h-[29rem]" />
+                <img
+                  src="/img/cloudcast.png"
+                  alt=""
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                />
               </a>
             </SwiperSlide>
             <SwiperSlide>
@@ -109,20 +122,20 @@ const Projects = () => {
                 <img
                   src="/img/sorting-visualizer.png"
                   alt=""
-                  className="h-[29rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
                 />
               </a>
             </SwiperSlide>
             <SwiperSlide>
               <a
-                href="https://pjoshi999.github.io/Rock-paper-scissor/"
+                href="https://amazonclone999.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/rock-paper-scissor.png"
+                  src="/img/amazon-clone.png"
                   alt=""
-                  className="h-[29rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
                 />
               </a>
             </SwiperSlide>
@@ -132,7 +145,11 @@ const Projects = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src="/img/university.png" alt="" className="h-[29rem]" />
+                <img
+                  src="/img/university.png"
+                  alt=""
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                />
               </a>
             </SwiperSlide>
           </Swiper>

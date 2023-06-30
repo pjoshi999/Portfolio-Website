@@ -23,7 +23,7 @@ app.post("/send", (req, res) => {
   const mailOptions = {
     from: email,
     to: process.env.SMTP_USER,
-    subject: "Portfolio | " + subject + " | " + name,
+    subject: subject + " <" + name + ">",
     html: `
         <body style="font-family: Arial, sans-serif; background-color: #F4F4F4; margin: 0; padding: 20px;">
             <div style="max-width: 600px; margin: 20px auto; background-color: #FFFFFF; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">

@@ -5,7 +5,7 @@ const Education = () => {
   const [myRef, isVisible] = useIntersection();
 
   return (
-    <div className="relative overflow-hidden bg-[#1D1D1D]">
+    <div className="relative overflow-hidden bg-[#1D1D1D]" id="education">
       <img
         src="https://github.githubassets.com/images/modules/site/home-campaign/bg-stars-1.webp"
         alt=""
@@ -13,7 +13,7 @@ const Education = () => {
       />
 
       {/* Dots - Background */}
-      <div className="absolute top-40 right-[15rem]">
+      <div className="absolute top-40 right-[15rem] rotate-45 2xl:right-[15rem] xl:right-[15rem] lg:right-[15rem] md:right-[15rem] sm:right-[7rem]">
         <div className="flex gap-5 absolute bottom-0">
           <button className="h-8 w-8 text-lg rounded-full bg-[#ffffff1a] text-[#272727] z-40 select-none cursor-default"></button>
           <button className="h-8 w-8 text-lg rounded-full bg-[#ffffff1a] text-[#272727] z-40 select-none cursor-default"></button>
@@ -62,22 +62,24 @@ const Education = () => {
       </div>
 
       {/* About - Background Text */}
-      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute left-[-14.5rem] bottom-[1.3rem]">
+      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute left-[-14.5rem] bottom-[1.3rem] 2xl:bottom-[1.3rem] xl:bottom-[1.3rem] lg:bottom-[1.3rem] md:bottom-[1.3rem] sm:bottom-[2.3rem]">
         ABOUT ME
       </span>
 
       <div
-        className={`flex justify-evenly ${
+        className={`flex justify-evenly 2xl:justify-evenly 2xl:flex xl:justify-evenly xl:flex xl:gap-52 lg:gap-20 lg:flex md:gap-20 md:flex sm:block ${
           isVisible
             ? "translate-y-0 ease-in-out duration-500 opacity-100"
-            : "translate-y-3/4 opacity-0"
+            : "translate-y-20 opacity-0"
         }`}
         ref={myRef}
       >
         <div className="text-white">
-          <h1 className="text-3xl font-semibold pt-12">Education</h1>
+          <h1 className="text-3xl font-semibold pt-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center">
+            Education
+          </h1>
           <div className="pb-5">
-            <div className="my-5">
+            <div className="my-5 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center">
               <h1 className="text-sm font-medium leading-8">
                 August 2020-May-2024
               </h1>
@@ -88,7 +90,7 @@ const Education = () => {
                 Swarnim Startup and Innovation University
               </h2>
             </div>
-            <div className="my-10">
+            <div className="my-10 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center">
               <h1 className="text-sm font-medium leading-8">
                 August 2019-May-2020
               </h1>
@@ -97,7 +99,7 @@ const Education = () => {
               </h1>
               <h2 className="leading-8">The Aditya Birla Public School</h2>
             </div>
-            <div className="my-10">
+            <div className="my-10 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center">
               <h1 className="text-sm font-medium leading-8">
                 August 2017-May-2018
               </h1>
@@ -110,10 +112,11 @@ const Education = () => {
         </div>
 
         <div className="text-white">
-          <h1 className="text-3xl font-semibold pt-12">Jobs</h1>
-
-          <div className="pb-10">
-            <div className="my-5">
+          <h1 className="text-3xl font-semibold pt-12 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center 2xl:pt-12 xl:pt-12 lg:pt-12 md:pt-12 sm:pt-0">
+            Jobs
+          </h1>
+          <div className="pb-10 2xl:pb-10 xl:pb-10 lg:pb-10 md:pb-10 sm:pb-6">
+            <div className="my-5 2xl:text-left xl:text-left lg:text-left md:text-left sm:text-center">
               <h1 className="text-sm font-medium leading-8">
                 May 2023-August-2023
               </h1>
