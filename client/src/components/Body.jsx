@@ -70,7 +70,7 @@ const Body = () => {
               <span className="text-2xl font-['Rubik']">I'm a </span>
               <span
                 ref={el}
-                className="text-4xl text-[#ff3171] px-1 font-semibold font-['Syle'] 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-4xl"
+                className="text-4xl text-[#ff3171] px-1 font-medium font-['Syle'] 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-4xl"
               />
               <span className="text-4xl 2xl:pr-0 xl:pr-0 lg:pr-0 md:pr-10 sm:pr-44">
                 |
