@@ -4,16 +4,19 @@ import useIntersection from "../utils/useIntersection";
 const TechStack = () => {
   const [myRef, isVisible] = useIntersection();
   return (
-    <div className="bg-[#161616] text-white pt-12 pb-16 relative overflow-hidden z-20" id="techstack">
+    <div
+      className="bg-[#161616] text-white pt-12 pb-16 relative overflow-hidden z-20"
+      id="techstack"
+    >
       {/* Ellipse - Background */}
       <img
         src="/img/icons/ellipse-27.png"
         alt=""
-        className="absolute -top-72 left-0 rotate-180 w-96 select-none z-0 2xl:-top-96 xl:-top-96 lg:-top-96 md:-top-96 sm:-top-[24rem] 2xl:left-0 xl:left-0 lg:left-0 md:left-0 sm:-left-24"
+        className="absolute -top-72 left-0 rotate-180 w-96 select-none z-0 2xl:-top-96 xl:-top-96 lg:-top-96 md:-top-96 sm:-top-[24rem] xs:-top-[24rem] 2xl:left-0 xl:left-0 lg:left-0 md:left-0 sm:-left-24 xs:-left-24"
       />
 
       {/* Skills - Background Text */}
-      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute right-[-5.5rem] top-[1.3rem] 2xl:-right-[5.5rem] xl:-right-[5.5rem] lg:-right-[5.5rem] md:-right-[5.5rem] sm:-right-[9rem]">
+      <span className="font['Poppins'] font-bold text-8xl text-[#272727] select-none absolute right-[-5.5rem] top-[1.3rem] 2xl:-right-[5.5rem] xl:-right-[5.5rem] lg:-right-[5.5rem] md:-right-[5.5rem] sm:-right-[9rem] xs:-right-[9rem]">
         SKILLS
       </span>
 
@@ -29,7 +32,7 @@ const TechStack = () => {
       >
         TECH STACK
       </h1>
-      <div className="grid grid-cols-6 pt-10 px-7 gap-10 justify-center items-center content-end 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-10 2xl:grid-cols-6 xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4">
+      <div className="grid grid-cols-6 pt-10 px-7 gap-10 justify-center items-center content-end 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-10 xs:gap-10 2xl:grid-cols-6 xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 xs:grid-cols-4">
         <div className="flex justify-center z-10 transition-all">
           <img
             src="/img/icons/html.png"

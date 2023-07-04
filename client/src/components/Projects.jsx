@@ -11,20 +11,20 @@ const Projects = () => {
   const [myRef, isVisible] = useIntersection();
   return (
     <div
-      className="relative bg-[#161616] text-white overflow-y-hidden pt-12 pb-16"
+      className="relative bg-[#161616] text-white overflow-hidden pt-12 pb-16"
       id="projects"
     >
       {/* Ellipse - Background */}
       <img
         src="/img/icons/ellipse-26.png"
         alt=""
-        className="absolute -rotate-90 -bottom-[11rem] w-[30rem] select-none 2xl:-bottom-[18rem] xl:-bottom-[18rem] lg:-bottom-[18rem] md:-bottom-[18rem] sm:-bottom-[14rem] 2xl:-left-0 xl:-left-16 lg:-left-40 md:-left-52 sm:-left-40"
+        className="absolute -rotate-90 -bottom-[11rem] w-[30rem] select-none 2xl:-bottom-[18rem] xl:-bottom-[18rem] lg:-bottom-[18rem] md:-bottom-[18rem] sm:-bottom-[14rem] xs:-bottom-[14rem] 2xl:-left-0 xl:-left-16 lg:-left-40 md:-left-52 sm:-left-40 xs:-left-40"
       />
       {/* Ellipse - Background */}
       <img
         src="/img/icons/ellipse-27.png"
         alt=""
-        className="absolute -top-60 right-0 w-96 select-none 2xl:-top-96 xl:-top-96 lg:-top-96 md:-top-96 sm:-top-96"
+        className="absolute -top-60 right-0 w-96 select-none 2xl:-top-96 xl:-top-96 lg:-top-96 md:-top-96 sm:-top-96 xs:-top-96"
       />
 
       <h1
@@ -37,7 +37,7 @@ const Projects = () => {
       >
         PROJECTS
       </h1>
-      <div className="flex justify-center mx-[17rem] 2xl:mx-[17rem] xl:mx-[14rem] lg:mx-[8rem] md:mx-[5rem] sm:mx-0">
+      <div className="flex justify-center mx-[17rem] 2xl:mx-[17rem] xl:mx-[14rem] lg:mx-[8rem] md:mx-[5rem] sm:mx-0 xs:mx-0">
         <div className="pt-12 2xl:pt-12 xl:pt-8">
           <Swiper
             effect={"coverflow"}
@@ -83,7 +83,7 @@ const Projects = () => {
                 <img
                   src="/img/watchify.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>
@@ -96,7 +96,7 @@ const Projects = () => {
                 <img
                   src="/img/foodhut.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>
@@ -109,7 +109,7 @@ const Projects = () => {
                 <img
                   src="/img/cloudcast.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>
@@ -122,7 +122,7 @@ const Projects = () => {
                 <img
                   src="/img/sorting-visualizer.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>
@@ -135,7 +135,7 @@ const Projects = () => {
                 <img
                   src="/img/amazon-clone.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>
@@ -148,7 +148,7 @@ const Projects = () => {
                 <img
                   src="/img/university.png"
                   alt=""
-                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem]"
+                  className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
             </SwiperSlide>

@@ -5,7 +5,7 @@ const Header = () => {
   const [hideMenuItems, setHideMenuItems] = useState(false);
 
   return (
-    <div className="flex bg-black text-white justify-between items-center px-10 py-7 relative">
+    <div className="flex bg-black text-white overflow-hidden justify-between items-center px-10 py-7 relative">
       <Link to="/">
         <div
           className="flex items-center"
@@ -23,15 +23,15 @@ const Header = () => {
       </Link>
 
       {/* For Smaller device */}
-      <div className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block">
+      <div className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
         <img
           src="/img/icons/hamburger.png"
           alt=""
-          className="h-8 2xl:hidden xl:hidden lg:hidden md:hidden sm:block"
+          className="h-8 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block"
           onClick={() => setHideMenuItems(!hideMenuItems)}
         />
         {hideMenuItems && (
-          <div className="bg-white text-black absolute right-0 py-3 my-2 w-screen z-40 2xl:hidden xl:hidden lg:hidden md:hidden sm:block">
+          <div className="bg-white text-black absolute right-0 py-3 my-2 w-screen z-40 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
             <ul>
               <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center">
                 <Link to="/">HOME</Link>
@@ -96,15 +96,15 @@ const Header = () => {
         )}
       </div>
 
-      <div className="2xl:block xl:block lg:block md:block sm:hidden">
+      <div className="2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
         {/* For Bigger device */}
-        <div className="2xl:block xl:block lg:block md:block sm:hidden">
+        <div className="2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
           <ul className="flex items-center font-['Syne'] transition duration-300 ease-in-out">
-            <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden">
+            <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
               <Link to="/">HOME</Link>
             </li>
             <li
-              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden"
+              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden xs:hidden"
               onClick={() =>
                 document
                   .getElementById("about")
@@ -114,7 +114,7 @@ const Header = () => {
               ABOUT
             </li>
             <li
-              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden"
+              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden xs:hidden"
               onClick={() =>
                 document
                   .getElementById("projects")
@@ -124,7 +124,7 @@ const Header = () => {
               PROJECTS
             </li>
             <li
-              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden"
+              className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 cursor-pointer 2xl:block xl:block lg:block md:block sm:hidden xs:hidden"
               onClick={() =>
                 document
                   .getElementById("contact")
@@ -136,9 +136,9 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      <div className="2xl:block xl:block lg:block md:block sm:hidden">
+      <div className="2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
         <ul className="transition duration-300 ease-in-out font-['Syne']">
-          <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 2xl:block xl:block lg:block md:block sm:hidden">
+          <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-1 2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
             <Link
               to="https://drive.google.com/file/d/1xO16NCyOMUVc5urIxyUT1djEpt66ewMy/view?usp=sharing"
               target="_blank"
