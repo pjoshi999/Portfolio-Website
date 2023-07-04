@@ -73,7 +73,7 @@ const Contact = () => {
             <img
               src="/img/icons/line.png"
               alt=""
-              className="h-[0.17rem] w-full 2xl:w-52 xl:w-44 lg:w-32 md:w-28 sm:w-[8.8rem] xs:w-[8.8rem] 2xl:h-[0.17rem] xl:h-[0.17rem] lg:h-[0.16rem] md:h-[0.15rem] sm:h-[0.13rem] xs:h-[0.13rem]"
+              className="h-[0.17rem] w-full 2xl:w-52 xl:w-44 lg:w-32 md:w-28 sm:w-[8.8rem] xs:w-[8rem] 2xl:h-[0.17rem] xl:h-[0.17rem] lg:h-[0.16rem] md:h-[0.15rem] sm:h-[0.13rem] xs:h-[0.13rem]"
             />
           </div>
           <div className="flex flex-col justify-between items-start h-1/3 pl-[4.5rem] 2xl:pl-[4.5rem] xl:pl-[3rem] lg:pl-[1.5rem] md:pl-[1rem] sm:pl-0 xs:pl-0 2xl:h-1/3 xl:h-1/3 lg:h-1/3 md:h-1/3 sm:h-1/2 xs:h-1/2 2xl:items-start xl:items-start lg:items-start md:items-start sm:items-center xs:items-center">

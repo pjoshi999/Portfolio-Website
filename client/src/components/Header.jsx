@@ -5,7 +5,10 @@ const Header = () => {
   const [hideMenuItems, setHideMenuItems] = useState(false);
 
   return (
-    <div className="flex bg-black text-white overflow-hidden justify-between items-center px-10 py-7 relative">
+    <div
+      className="flex bg-black text-white justify-between items-center px-10 py-7 relative 2xl:px-10 xl:px-10 lg:px-10 md:px-10 sm:px-5 xs:px-3 2xl:py-7 xl:py-7 lg:py-7 md:py-7 sm:py-7 xs:py-4"
+      id="header"
+    >
       <Link to="/">
         <div
           className="flex items-center"
@@ -16,7 +19,7 @@ const Header = () => {
             alt="Logo"
             className="w-10 h-10 select-none"
           />
-          <span className="px-4 text-xl font-['Montserrat'] tracking-widest">
+          <span className="px-4 text-xl font-['Montserrat'] tracking-widest 2xl:text-xl xl:text-xl lg:text-xl md:text-xl sm:text-xl xs:text-lg">
             PORTFOLIO
           </span>
         </div>
@@ -31,9 +34,17 @@ const Header = () => {
           onClick={() => setHideMenuItems(!hideMenuItems)}
         />
         {hideMenuItems && (
-          <div className="bg-white text-black absolute right-0 py-3 my-2 w-screen z-40 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
+          <div className="bg-white text-black absolute right-0 py-3 my-2 w-screen z-50 z-40 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
             <ul>
-              <li className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center">
+              <li
+                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
+                onClick={() => (
+                  setHideMenuItems(!setHideMenuItems),
+                  document
+                    .getElementById("header")
+                    .scrollIntoView({ behavior: "smooth" })
+                )}
+              >
                 <Link to="/">HOME</Link>
               </li>
               <li
