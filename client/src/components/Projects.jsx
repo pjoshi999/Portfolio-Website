@@ -6,6 +6,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, EffectCoverflow, Pagination, Navigation } from "swiper";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const [myRef, isVisible] = useIntersection();
@@ -86,6 +87,32 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                Watchify - A Video Streaming Platform
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <Link
+                  to="https://github.com/pjoshi999/Watchify"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                >
+                  View Code
+                  <img
+                    src="/img/icons/right-arrow.png"
+                    alt=""
+                    className="h-[24px] w-[24px]"
+                  />
+                </Link>
+                <Link
+                  to="https://watchifyin.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                >
+                  Live Preview
+                </Link>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <a
@@ -99,6 +126,34 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                FoodHut - A Food Ordering Application
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <div className="">
+                  <Link
+                    to="https://github.com/pjoshi999/FoodHut"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                  >
+                    View Code
+                    <img
+                      src="/img/icons/right-arrow.png"
+                      alt=""
+                      className="h-[24px] w-[24px]"
+                    />
+                  </Link>
+                  <Link
+                    to="https://foodhutin.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                  >
+                    Live Preview
+                  </Link>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <a
@@ -112,6 +167,34 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                CloudCast - A Weather Forecast App
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <div className="">
+                  <Link
+                    to="https://github.com/pjoshi999/CloudCast"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                  >
+                    View Code
+                    <img
+                      src="/img/icons/right-arrow.png"
+                      alt=""
+                      className="h-[24px] w-[24px]"
+                    />
+                  </Link>
+                  <Link
+                    to="https://cloudcast.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                  >
+                    Live Preview
+                  </Link>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <a
@@ -125,6 +208,34 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                Sorting Visualizer
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <div className="">
+                  <Link
+                    to="https://github.com/pjoshi999/Sorting-Visualizer"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                  >
+                    View Code
+                    <img
+                      src="/img/icons/right-arrow.png"
+                      alt=""
+                      className="h-[24px] w-[24px]"
+                    />
+                  </Link>
+                  <Link
+                    to="https://sortingvisualizer999.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                  >
+                    Live Preview
+                  </Link>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <a
@@ -138,6 +249,34 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                Amazon Clone
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <div className="">
+                  <Link
+                    to="https://amazonclone999.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                  >
+                    View Code
+                    <img
+                      src="/img/icons/right-arrow.png"
+                      alt=""
+                      className="h-[24px] w-[24px]"
+                    />
+                  </Link>
+                  <Link
+                    to="https://amazonclone999.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                  >
+                    Live Preview
+                  </Link>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
               <a
@@ -151,6 +290,34 @@ const Projects = () => {
                   className="h-[32rem] 2xl:h-[32rem] xl:h-[32rem] lg:h-[28rem] md:h-[24rem] sm:h-[15rem] xs:h-[12rem]"
                 />
               </a>
+              <h1 className="text-2xl text-center mt-5 2xl:mt-5 xl:mt-5 lg:mt-5 md:mt-5 sm:mt-0 xs:mt-0 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                University Website
+              </h1>
+              <div className="my-3 relative 2xl:block xl:hidden lg:hidden md:hidden sm:hidden xs:hidden">
+                <div className="">
+                  <Link
+                    to="https://github.com/pjoshi999/University-website"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center 2xl:flex xl:flex lg:flex md:flex sm:block xs:block"
+                  >
+                    View Code
+                    <img
+                      src="/img/icons/right-arrow.png"
+                      alt=""
+                      className="h-[24px] w-[24px]"
+                    />
+                  </Link>
+                  <Link
+                    to="https://pjoshi999.github.io/University-website/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-[#13ff00] text-black rounded-lg px-3 py-2 absolute end-0 -bottom-3"
+                  >
+                    Live Preview
+                  </Link>
+                </div>
+              </div>
             </SwiperSlide>
           </Swiper>
         </div>
