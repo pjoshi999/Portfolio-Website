@@ -35,42 +35,51 @@ const TechStack = () => {
       <div className="grid grid-cols-6 pt-10 px-7 gap-10 justify-center items-center content-end 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-10 xs:gap-10 2xl:grid-cols-6 xl:grid-cols-6 lg:grid-cols-6 md:grid-cols-6 sm:grid-cols-4 xs:grid-cols-4">
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/html.png"
+            src="/img/icons/html.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/css.png"
+            src="/img/icons/css.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/javascript.png"
+            src="/img/icons/js.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/react.png"
+            src="/img/icons/react.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/redux.png"
+            src="/img/icons/redux.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
+        <div className="flex justify-center z-10 transition-all border-none">
+          {/* <div className="w-28 bg-black rounded-full overflow-hidden transition-all outline-none hover:scale-110 hover:transform hover:ease-in duration-200"> */}
+          <img
+            src="/img/icons/nextjs.svg"
+            alt=""
+            className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
+          />
+          {/* </div> */}
+        </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/tailwind.png"
+            src="/img/icons/tailwindcss.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
@@ -84,14 +93,14 @@ const TechStack = () => {
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/git.png"
+            src="/img/icons/git.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/nodejs.png"
+            src="/img/icons/nodejs.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />
@@ -105,14 +114,7 @@ const TechStack = () => {
         </div>
         <div className="flex justify-center z-10 transition-all">
           <img
-            src="/img/icons/vscode.png"
-            alt=""
-            className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
-          />
-        </div>
-        <div className="flex justify-center z-10 transition-all">
-          <img
-            src="/img/icons/github.png"
+            src="/img/icons/mongodb.svg"
             alt=""
             className="w-28 hover:scale-110 hover:transform hover:ease-in duration-200"
           />

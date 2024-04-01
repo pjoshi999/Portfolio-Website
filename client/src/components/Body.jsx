@@ -1,17 +1,19 @@
 import React, { useEffect } from "react";
 import Typed from "typed.js";
 import Resume from "../assets/resume/Priyanshu_Joshi.pdf";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const el = React.useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Web Developer",
-        "Student",
-        "Front-end Developer",
-        "Backend Developer",
         "Full Stack Developer",
+        // "Web Developer",
+        "Student",
+        "Coding Enthusiast",
+        "Front-End Developer",
+        "Backend Developer",
       ],
       typeSpeed: 60,
       backSpeed: 25,
@@ -72,21 +74,21 @@ const Body = () => {
               </span>
               <span
                 ref={el}
-                className="text-4xl text-[#ff3171] px-1 font-medium font-['Syle'] 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-4xl xs:text-2xl 2xl:font-medium xl:font-medium lg:font-medium md:font-medium sm:font-medium xs:font-semibold"
+                className="text-4xl text-[#ff3171] px-1 font-medium font-['Syle'] 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-3xl xs:text-3xl 2xl:font-medium xl:font-medium lg:font-medium md:font-medium sm:font-medium xs:font-semibold"
               />
               <span className="text-4xl 2xl:pr-0 xl:pr-0 lg:pr-0 md:pr-10 sm:pr-36 xs:pr-56 2xl:text-4xl xl:text-4xl lg:text-4xl md:text-4xl sm:text-4xl xs:text-2xl">
                 |
               </span>
             </div>
             <div className="w-[31.45rem] font-['Rubik'] 2xl:w-[31.45rem] xl:w-[31.45rem] lg:w-[31.45rem] md:w-[31.45rem] sm:w-[31.45rem] xs:w-[31.45rem] 2xl:pr-0 xl:pr-0 lg:pr-14 md:pr-10 sm:pr-44 xs:pr-52">
-              Front-end developer focused on creating Web applications. I really
-              like different projects that solve real problems.
+              Full Stack developer focused on creating Web applications. I
+              really like different projects that solve real problems.
             </div>
             <div className="flex gap-14 my-8 2xl:gap-16 xl:gap-16 lg:gap-16 md:gap-16 sm:gap-11 xs:gap-6">
-              <a href={Resume} download="Priyanshu Joshi.pdf">
+              <a to={Resume} download="Priyanshu Joshi.pdf">
                 <div className="flex items-center py-5 h-6">
                   <img
-                    src="/img/icons/download.png"
+                    src="/img/icons/download.svg"
                     alt=""
                     className="h-6 select-none"
                   />
@@ -94,14 +96,14 @@ const Body = () => {
                 </div>
               </a>
               <a
-                href="https://drive.google.com/file/d/1xO16NCyOMUVc5urIxyUT1djEpt66ewMy/view?usp=sharing"
+                to="https://drive.google.com/file/d/1xO16NCyOMUVc5urIxyUT1djEpt66ewMy/view?usp=sharing"
                 download="Priyanshu Joshi"
                 target="_blank"
                 rel="noreferrer"
               >
                 <button className="bg-[#13FF00] flex items-center h-6 py-5 px-2 rounded-lg">
                   <img
-                    src="/img/icons/arrow-circle-down.png"
+                    src="/img/icons/portfolio.svg"
                     alt=""
                     className="h-6 select-none"
                   />
@@ -110,70 +112,70 @@ const Body = () => {
               </a>
             </div>
             <div className="flex gap-10 my-11 items-center 2xl:my-11 xl:my-11 lg:my-11 md:my-5 sm:my-2 xs:my-2 2xl:px-0 xl:px-0 lg:px-0 md:px-0 sm:px-5 xs:px-2 2xl:gap-10 xl:gap-10 lg:gap-10 md:gap-10 sm:gap-8 xs:gap-8">
-              <a
-                href="https://www.instagram.com/_p.joshi98_/"
+              <Link
+                to="https://www.instagram.com/_p.joshi98_/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/icons/brand-instagram.png"
+                  src="/img/icons/instagram.svg"
                   alt="INSTAGRAM"
-                  className="h-[29px] select-none"
+                  className="h-[23px] select-none"
                 />
-              </a>
-              <a
-                href="https://github.com/pjoshi999"
+              </Link>
+              <Link
+                to="https://github.com/pjoshi999"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/icons/brand-github.png"
+                  src="/img/icons/github.svg"
                   alt="GITHUB"
                   className="h-[29px] select-none"
                 />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/priyanshujoshi98/"
+              </Link>
+              <Link
+                to="https://www.linkedin.com/in/priyanshujoshi98/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/icons/brand-linked-in.png"
+                  src="/img/icons/linkedin.svg"
                   alt="LINKEDIN"
-                  className="h-[23px] select-none"
+                  className="h-[25px] select-none"
                 />
-              </a>
-              <a
-                href="https://twitter.com/p_joshi98"
+              </Link>
+              <Link
+                to="https://twitter.com/p_joshi98"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/icons/brand-twitter.png"
+                  src="/img/icons/twitter.svg"
                   alt="TWITTER"
                   className="h-[25px] select-none"
                 />
-              </a>
-              <a
-                href="mailto:joshi.priyanshu999@gmail.com"
+              </Link>
+              <Link
+                to="mailto:joshi.priyanshu999@gmail.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img
-                  src="/img/icons/mail.png"
+                  src="/img/icons/mail.svg"
                   alt="TWITTER"
                   className="h-[25px] select-none"
                 />
-              </a>
+              </Link>
             </div>
             <div className="flex my-14 items-center relative left-[39rem] 2xl:left-[39rem] xl:left-[37rem] lg:left-[32rem] md:left-[23.5rem] sm:left-[100rem] xs:left-[100rem] 2xl:-top-[1.5rem] xl:-top-[1.5rem] lg:-top-[1.5rem] md:-top-[1.5rem] sm:-top-[5.5rem] xs:-top-[5.5rem]">
               <span className="font-['Syne'] font-semibold tracking-widest">
                 SCROLL
               </span>
               <img
-                src="/img/icons/arrow-down.png"
+                src="/img/icons/arrow-down.svg"
                 alt=""
-                className="h-6 animate-bounce select-none"
+                className="h-2 animate-bounce select-none"
               />
             </div>
           </div>

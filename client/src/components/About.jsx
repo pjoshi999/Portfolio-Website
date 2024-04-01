@@ -34,23 +34,23 @@ const About = () => {
       >
         <p>
           My name is <span className="text-[#13FF00]">Priyanshu Joshi</span>,
-          I'm <span className="text-[#13FF00]">20</span> years old and I am a
+          I'm <span className="text-[#13FF00]">21</span> years old and I am a
           passionate{" "}
-          <span className="text-[#13FF00]"> Frontend Developer </span>
+          <span className="text-[#13FF00]"> Full Stack Developer </span>
           with a focus on creating remarkable user experiences.
         </p>
         <p>
           My commitment to staying current with industry trends and best
           practices ensures that I deliver frontend solutions that are at the
-          forefront of <span className="text-[#13FF00]">innovation</span>. I am
+          forefront of <span className="text-[#13FF00]">Innovation</span>. I am
           passionately curious and driven by a desire to constantly improve and
           provide exceptional user experience.
         </p>
         <br />
         <p>
           Feel free to explore my{" "}
-          <span className="text-[#13FF00]">portfolio</span> and witness the{" "}
-          <span className="text-[#13FF00]">projects</span> where I have combined
+          <span className="text-[#13FF00]">Portfolio</span> and witness the{" "}
+          <span className="text-[#13FF00]">Projects</span> where I have combined
           my technical expertise with a creative touch to create impactful
           experiences. I look forward to connecting and discussing opportunities
           to collaborate on exciting projects.

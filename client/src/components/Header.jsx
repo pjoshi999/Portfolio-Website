@@ -1,8 +1,83 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
+const AccordionItem = ({ title, path, setHideMenuItems }) => {
+  return (
+    <div className="group flex flex-col py-4 text-white">
+      <div
+        className="flex cursor-pointer items-center justify-between"
+        onClick={() => (
+          setHideMenuItems(!setHideMenuItems),
+          document.getElementById(path).scrollIntoView({ behavior: "smooth" })
+        )}
+      >
+        <buttom className="text-[14px] tracking-wide">{title}</buttom>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/9/96/Chevron-icon-drop-down-menu-WHITE.png"
+          // onClick={onToggle}
+          className={`h-2 w-3 transition-all duration-500`}
+        />
+      </div>
+      {/* <div
+        className={`overflow-hidden max-h-0 items-center opacity-0 transition-all ${
+          isOpen ? "visible opacity-100 max-h-screen duration-1000" : ""
+        }`}
+      >
+        <ul className="py-3">
+          {items.map((item, index) => (
+            <li className="text-[14px] flex items-center py-2" key={index}>
+              <img
+                src={item?.src}
+                alt={`Item ${index + 1}`}
+                width="18"
+                height="18"
+                className=""
+              />
+              <Link href={item?.path} className="pl-5 tracking-wide">
+                {item?.text}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div> */}
+    </div>
+  );
+};
+
 const Header = () => {
   const [hideMenuItems, setHideMenuItems] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex((prev) => (prev === index ? null : index));
+  };
+
+  const accordionData = [
+    {
+      title: "HOME",
+      path: "header",
+    },
+    {
+      title: "ABOUT",
+      path: "about",
+    },
+    {
+      title: "EDUCATION",
+      path: "education",
+    },
+    {
+      title: "TECH STACK",
+      path: "techstack",
+    },
+    {
+      title: "PROJECTS",
+      path: "projects",
+    },
+    {
+      title: "CONTACT",
+      path: "contact",
+    },
+  ];
 
   return (
     <div
@@ -26,85 +101,63 @@ const Header = () => {
       </Link>
 
       {/* For Smaller device */}
-      <div className="2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
-        <img
-          src="/img/icons/hamburger.png"
-          alt=""
-          className="h-8 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block"
-          onClick={() => setHideMenuItems(!hideMenuItems)}
-        />
-        {hideMenuItems && (
-          <div className="bg-white text-black absolute right-0 py-3 my-2 w-screen z-50 z-40 2xl:hidden xl:hidden lg:hidden md:hidden sm:block xs:block">
-            <ul>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("header")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">HOME</Link>
-              </li>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("about")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">ABOUT</Link>
-              </li>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("education")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">EDUCATION</Link>
-              </li>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("techstack")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">TECH STACK</Link>
-              </li>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("projects")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">PROJECTS</Link>
-              </li>
-              <li
-                className="px-5 text-md tracking-widest rounded-full bg-bottom bg-gradient-to-r from-[#13FF00] to-[#ff3171] bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] transition-all duration-500 ease-out py-3 cursor-pointer flex justify-center items-center"
-                onClick={() => (
-                  setHideMenuItems(!setHideMenuItems),
-                  document
-                    .getElementById("contact")
-                    .scrollIntoView({ behavior: "smooth" })
-                )}
-              >
-                <Link to="/">CONTACT</Link>
-              </li>
-            </ul>
+      <div
+        className={`relative flex items-center gap-3 2xl:hidden xl:hidden lg:hidden md:hidden sm:flex xs:flex`}
+      >
+        {hideMenuItems ? (
+          <div className="">
+            <button
+              className="fixed left-[5.4vw] top-7 z-50"
+              onClick={() => setHideMenuItems(!hideMenuItems)}
+            >
+              <img
+                src="/img/Logo.png"
+                alt="Logo"
+                className="w-10 h-10 select-none"
+              />
+            </button>
+            <button
+              className="flex text-4xl text-white items-center cursor-pointer fixed right-4 top-10 z-50"
+              onClick={() => setHideMenuItems(!hideMenuItems)}
+            >
+              <img
+                src="/img/icons/cross.svg"
+                width="22"
+                height="22"
+                alt="Exit"
+              />
+            </button>
           </div>
+        ) : (
+          <>
+            <img
+              src="/img/icons/hamburger.svg"
+              width="22"
+              height="22"
+              alt="Hamburger"
+              className=""
+              onClick={() => setHideMenuItems(!hideMenuItems)}
+            />
+          </>
         )}
+        <div
+          className={`top-0 right-0 w-screen bg-gradient-to-br from-black/[0.9] from-[100%] to-white/[0.1] py-20 px-5 text-center text-white fixed z-40 h-[75%] rounded-b-3xl ease-in-out duration-300 ${
+            hideMenuItems ? "translate-x-0 " : "translate-x-full"
+          }`}
+        >
+          <div className="py-8">
+            {accordionData.map((accordion, index) => (
+              <div key={index}>
+                <AccordionItem
+                  title={accordion?.title}
+                  path={accordion?.path}
+                  setHideMenuItems={setHideMenuItems}
+                />
+                <hr />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="2xl:block xl:block lg:block md:block sm:hidden xs:hidden">
