@@ -135,7 +135,7 @@ const Body = () => {
                 />
               </Link>
               <Link
-                to="https://www.linkedin.com/in/priyanshujoshi98/"
+                to="https://www.linkedin.com/in/pjoshi999/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -146,7 +146,7 @@ const Body = () => {
                 />
               </Link>
               <Link
-                to="https://twitter.com/p_joshi98"
+                to="https://twitter.com/priyaansshhu"
                 target="_blank"
                 rel="noreferrer"
               >
